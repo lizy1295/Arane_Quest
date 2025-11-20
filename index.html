@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="StyleSheet" href="style.css">
+</head>
+<body div="page">
+
+    <!--header section-->
+    <header class="nav-bar">
+            <a href="#" id="logo">ArcaneQuest</a>
+          <a href ='#character'>Characters</a>
+          <a href="#game">Game</a>
+        </header>
+
+          <!---character selection-->
+        <section id="character" class="characters" ">
+            <h2>The Arcanes!</h2>
+          <div class="char-grid">
+                     <!--i used <button> for each interactive card -->
+              
+                <button class="char-card" data-name="VI" data-role="The Enforcer" data-desc="A fierce, loyal fighter from Zaun who uses raw strength to protect those she cares about." aria-label="VI">
+                  <img src="images/vdfv.jpg" alt="VI portrait">
+                     <h3>VI</h3>
+                </button>  
+                <!---JINX-->
+                <button class="char-card" data-name="JINX" data-role="The Loose Cannon" data-desc="Chaotic, brilliant, and dangerous — she loves explosions and attention." aria-label="Jinx">
+                  <img src="images/vd.jpg" alt="Jinx portrait">
+                    <h3>JINX</h3> 
+                </button>
+                <!--EKKO-->
+                <button class="char-card" data-name="EKKO" data-role="The Time-Bender" data-desc="A clever street kid with a knack for gadgets and bending time to his favor." aria-label="Ekko">
+                 <img src="images/fds.jpg" alt="Ekko portrait">
+                  <h3>EKKO</h3>
+                </button>
+                <!--Caityln-->
+                <button class="char-card" data-name="CAITLYN" data-role="The Sheriff" data-desc="A sharpshooter and detective from Piltover who values order and precision." aria-label="Caitlyn">
+                 <img src="images/cdc.jpg" alt="Caitlyn portrait">
+                <h3>CAITLYN</h3>
+               </button>
+                <!--jayce-->
+                <button class="char-card" data-name="JAYCE" data-role="The Inventor" data-desc="A brilliant inventor who builds technology to change the world." aria-label="Jayce">
+                 <img src="images/jayce.jpg" alt="Jayce portrait">
+                <h3>JAYCE</h3>
+                </button>
+                <!--viktor-->
+               <button class="char-card" data-name="VIKTOR" data-role="The Upgrader" data-desc="A scientist who seeks perfection through augmentation and machines." aria-label="Viktor">
+                 <img src="images/vik.jpg" alt="Viktor portrait">
+                <h3>VIKTOR</h3>
+                </button>
+                <!--mel-->
+               <button class="char-card" data-name="MEL" data-role="The Rebel" data-desc="A streetwise ally who fights for the undercity." aria-label="Mel">
+                 <img src="images/mel.jpg" alt="Mel portrait">
+                 <h3>MEL</h3>
+               </button> 
+                <!--silco-->
+              <button class="char-card" data-name="SILCO" data-role="The Mastermind" data-desc="A calculating leader with grand plans for Zaun's future." aria-label="Silco">
+                <img src="images/silco.jpg" alt="Silco portrait">
+                 <h3>SILCO</h3>
+                </button>  
+               <!--heimedinger-->
+               <button class="char-card" data-name="HEIMERDINGER" data-role="The Academic" data-desc="An eccentric inventor with a love for theory, tinkering and bright ideas." aria-label="Heimerdinger">
+                <img src="images/heim.jpg" alt="Heimerdinger portrait">
+               <h3>HEIMERDINGER</h3>
+               </button>
+               <!--sevika-->
+               <button class="char-card" data-name="SEVIKA" data-role="The Commander" data-desc="A fearsome fighter and right hand in the undercity's power structure." aria-label="Sevika">
+                <img src="images/sevika.jpg" alt="Sevika portrait">
+                <h3>SEVIKA</h3>
+                </button>
+            </div>
+          </section>
+
+            <!--showcase-->
+          <section class="showcase" style="background-color: rgb(5, 22, 0);">
+                <h1 style="margin-top:18px; color: rgb(112, 197, 16);">ARCANE CHARACTER SELECT</h1>
+                  <P class="subtitle"> Step into the world of arcane! whether you're jinx, vi caityln, or other ten main characters from the hit series.<br>
+                    click a character below to learn more about their powers and story.</p>
+        </section>
+
+        <!--charcter details-->
+    <section id="about" class="about">
+    <div id="char-info" aria-hidden="true">
+    <button class="close-btn" aria-label="Close">✕</button>
+    <h3 id="char-name">Character</h3>
+    <p id="char-role">Role</p>
+    <p id="char-desc">Description</p>
+    </div>
+</section>
+
+    
+        <!---Game Section-->
+        <section id ="game" class="game">
+            <h2 style="color: rgb(112, 197, 16); font-size: 3rem;">Welcome to this Arcane Character test!</h2>
+            <p>Remeber!!Don't try to act like your favourite character/Don't try to think of the "best" answer.</p>
+            <div id="quiz-container" class="quiz-container">
+            <div id="question-box"></div>
+            <div id="option-box"></div>
+            <button id="next-btn" class="next-btn">Next</button>
+                <!-- Result box - shown after quiz completes -->
+                <div id="result-box" class="hidden">
+                  <h3>Your Result</h3>
+                  <p id="score"></p>
+                  <button class="btn" id="retry-btn">Try Again</button>
+                </div>
+              </div>
+        </section>
+
+  
+        
+<footer>let's get JINX</footer>
+    
+        
+<script src="script.js"></script>
+</body>
+</html>
