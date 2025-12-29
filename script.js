@@ -179,12 +179,12 @@ const quizData = [
     }
   }
 ];
-// 2. State
+// intial State
 let currentQuestion = 0;
 let scores = { Vi: 0, Jinx: 0, Caitlyn: 0, Viktor: 0, Jayce: 0 };
 let selected = null;
 
-// 3. Load a question into the DOM
+// Load a question into the DOM
 function loadQuestion() {
   const q = quizData[currentQuestion];
   if (!questionBox || !optionsBox) return;
@@ -205,7 +205,7 @@ function loadQuestion() {
   }
 }
 
-// 4. Next button handler
+// add button handler
 if (nextBtn) {
   nextBtn.addEventListener('click', () => {
     if (!selected) return; // require an answer
@@ -221,7 +221,7 @@ if (nextBtn) {
   });
 }
 
-// 5. Show final result
+// display final result
 function showResult() {
   if (questionBox) questionBox.style.display = 'none';
   if (optionsBox) optionsBox.style.display = 'none';
